@@ -141,3 +141,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # After successful login redirect user to main page, in this case blog-home
 LOGIN_REDIRECT_URL = 'blog-home'
+
+# Redirect to own login path/ after succeeded login redirect to required page
+LOGIN_URL = 'login'
