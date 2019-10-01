@@ -11,7 +11,7 @@ def register(request):
             username = form.cleaned_data.get('username')
 
             # create flash message with redirection
-            messages.success(request, f'Account created for {username}!')
+            messages.success(request, f'Your account bas been created! You are able to log in.')
             return redirect('blog-home')
     else:
         form = UserRegisterForm()
