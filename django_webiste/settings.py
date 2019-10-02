@@ -137,6 +137,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# where we store files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# how we can access to files
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # After successful login redirect user to main page, in this case blog-home
